@@ -92,7 +92,11 @@ a = "a:b:c:d"
 다음 변수들을 사용해서 아래 문장을 출력해라.
 name = "Tom"
 age = 25
+My name is Tom and I am 25 years old.
 """
+name = "Tom"
+age = 25
+print(f'My name is {name} and I am {age} years ord')
 #print("My name is %s and I am %d years old." %(name, age))
 #print(f"My name is {name} and I am {age} years old.")
 
@@ -101,6 +105,7 @@ age = 25
 다음 문자열을 가운데 정렬로 출력해라.
 ****python****
 """
+print(f'{"python":*^14}')
 #답: print("{0:*^14}".format("python"))
 #답: print(f'{"python":*^14}')
 
