@@ -190,7 +190,7 @@ user = {"name": "넙치", "age": 20}
 user = {"name": "넙치", "age": 20}
 
 user.get("name")       # 넙치
-user["age"] = 30       # 수정
+user["age"] = 26       # 수정
 user.update({"city":"서울"})
 user.pop("age")        # 삭제
 ```
