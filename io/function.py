@@ -40,3 +40,29 @@ def say():
     print('Hi')
 
 say()
+
+#매개변수를 지정하여 호출하기
+def sub(a,b):
+    return a-b
+result = sub(a=7,b=3)
+print(result)
+
+result = sub(b=7,a=3)
+print(result)
+
+#입력값이 몇 개가 될지 모를 때
+"""
+def 함수_이름(*매개변수):
+    수행할_문장
+"""
+##여러개의 입력값을 받는 함수 만들기
+def add_many(*args):
+    result = 0
+    for i in args:
+        result += i
+    return result
+result = add_many(1,2,3)
+print(result)
+
+result = add_many(1,2,3,4,5,6,7,8,9,10)
+print(result)
