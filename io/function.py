@@ -117,10 +117,53 @@ say_nick('야호')
 say_nick('바보') #return이 실행되어 함수를 빠져나옴
 
 #매개변수에 초깃값 미리 설정하기
-def say_myself(name, age, man=True):
+def say_myself(name, age, man=True): #초기값 설정 - 항상 맨 뒤쪽에 놓아야 함 (name, man=True, age 불가)
     print("나의 이름은 %s입니다." % name)
     print("나이는 %d살입니다." % age)
     if man:
         print("남자입니다.")
     else:
         print("여자입니다.")
+
+say_myself("박응용", 27)
+say_myself("박응용", 27, True)
+say_myself("박응선", 27, False)
+
+#함수 안에서 선언한 변수의 효력 범위
+a = 1
+def vartest(a):
+    a = a+1
+vartest(a)
+
+print(a) #1
+
+a = 1
+def vartest(a):
+    a = a+1
+vartest(3)
+
+print(a)
+
+#함수 안에서 함수 밖의 변수를 변경하는 방법
+##1. return 사용하기
+a = 1
+def vartest(a):
+    a = a+1
+    return a
+a = vartest(a)
+print(a)
+
+##2 global 명령어 사용하기
+a = 1
+def vartest():
+    global a #함수 밖의 a를 직접 사용하겠다는 의미
+    a = a+1
+
+vartest()
+print(a)
+
+#lambda 예약어
+##함수_이름 = lambda 매개변수1, 매개변수2, ... : 매개변수를_이용할_표현식
+add = lambda a, b: a+b
+result = add(3,4)
+print(result)
