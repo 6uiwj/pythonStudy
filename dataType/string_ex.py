@@ -106,8 +106,10 @@ print(f'My name is {name} and I am {age} years ord')
 ****python****
 """
 print(f'{"python":*^14}')
+print("{0:*^14}".format("python"))
 #답: print("{0:*^14}".format("python"))
 #답: print(f'{"python":*^14}')
+
 
 #문제13
 """
