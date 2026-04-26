@@ -7,3 +7,9 @@ print(abs(-1.2))
 print(all([1,2,3]))
 print(all([1,2,3,0]))
 print(all([]))
+
+#any
+any([1,2,3,0])
+
+any([9, ""])
+any([])
