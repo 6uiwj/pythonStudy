@@ -13,3 +13,7 @@ any([1,2,3,0])
 
 any([9, ""])
 any([])
+
+#chr
+print(chr(97))
+print(chr(44032))
