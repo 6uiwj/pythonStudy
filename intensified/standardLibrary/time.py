@@ -17,5 +17,8 @@ print(time.strftime( '%x', time.localtime(time.time()))) #04/29/26
 print(time.strftime( '%c', time.localtime(time.time()))) #Thu May 25 10:13:52 2023
 
 ##time.sleep
+for i in range(10):
+    print(i)
+    time.sleep(1)
 
 
